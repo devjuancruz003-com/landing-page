@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-bg: #1F2937;
+    --title-color: #F9FAF8;
+    --secondary-text: #E5E7EB;
+    --btn-cta: #3882F6;
+}
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px solid red;
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-bg);
+    padding: 10px 10px 100px 10px;
+    gap: 50px;
+
+    .nav {
+        min-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50rem;
+
+        .logo {
+            flex: 1;
+        }
+
+        .nav-list {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+    .hero-section {
+        min-width: 90%;
+        display: flex;
+        gap: 5rem;
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 1rem;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 900;
+                color: var(--title-color);
+            }
+
+            p {
+                font-size: 18px;
+                color: var(--secondary-text);
+            }
+
+            button {
+                padding: 5px 30px;
+                align-self: flex-start;
+                border: none;
+                border-radius: 5px;
+                background-color: var(--btn-cta);
+                color: white;
+                font-weight: 900;
+            }
+        }
+
+        .hero-img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #6D757D;
+        }
+
+    }
+}
+
+main {
+    flex: 1;
+}
